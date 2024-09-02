@@ -14,7 +14,7 @@
 
 .todo-app{
     width: 100%;
-    max-width: 540px;
+    max-width: 700px;
     background-color: white;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -59,7 +59,7 @@ button{
 
 ul li{
     list-style: none;
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
@@ -69,8 +69,8 @@ ul li{
 ul li::before{
     content:'';
     position:absolute;
-    height: 28px;
-    width:28px;
+    height: 26px;
+    width:26px;
     border-radius: 50%;
     background-image: url(images/unchecked.png);
     background-size: cover;

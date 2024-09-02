@@ -1,4 +1,6 @@
 const inputBox = document.getElementById("input-box");
+const DateBox = document.getElementById("date-input");
+const TimeBox = document.getElementById("time-input");
 const listContainer = document.getElementById("list-container")
 
 function addTask(){
@@ -7,13 +9,15 @@ function addTask(){
     }
     else{
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
+        li.innerHTML = inputBox.value + " - " + DateBox.value + " - " + TimeBox.value;
         listContainer.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
     }
     inputBox.value = "";
+    DateBox.value = "";
+    TimeBox.value = "";
     saveContent();
 }
 
@@ -37,3 +41,4 @@ function showContent(){
     listContainer.innerHTML = localStorage.getItem("content");
 }
 showContent();
+
