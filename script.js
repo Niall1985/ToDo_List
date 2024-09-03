@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const DateBox = document.getElementById("date-input");
 const TimeBox = document.getElementById("time-input");
+const Timebox = document.getElementById("endtime-input");
 const listContainer = document.getElementById("list-container")
 
 function addTask(){
@@ -9,7 +10,7 @@ function addTask(){
     }
     else{
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value + " - " + DateBox.value + " - " + TimeBox.value;
+        li.innerHTML = inputBox.value + "     " + DateBox.value + "     " + TimeBox.value + "     " + Timebox.value;
         listContainer.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
